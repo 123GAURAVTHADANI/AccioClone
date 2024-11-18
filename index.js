@@ -1,45 +1,17 @@
-// // functional constructor
-// function Developer(name) {
-//   this.name = name;
-//   this.type = "Developer";
-// }
-// function Tester(name) {
-//   this.name = name;
-//   this.type = "Tester";
-// }
-
-// function EmployeeFactory() {
-//     // function declaration
-//   this.create = (name, type) => {
-//     switch (type) {
-//       case 1:
-//         return new Developer(name);
-//         break;
-//       case 2:
-//         return new Tester(name);
-//         break;
-//     }
-//   };
-
-// }
-
-// const employeeFact = new EmployeeFactory();
-// const employee = [];
-// function hi() {
-//   console.log("Hi I am from !!!" + this.name + " " + this.type);
-// }
-
-// employee.push(employeeFact.create("Stakshi", 1));
-// employee.push(employeeFact.create("Vishal", 1));
-// employee.push(employeeFact.create("Gaurav", 2));
-// console.log(employee.length);
-
-// function Rice(name) {
-//   this.name = name;
-//   this.type = 1;
-// }
-
-// function Jeans(name) {
-//   this.name = name;
-//   this.type = 2;
-// }
+fetch("https://fakestoreapi.com/products")
+  .then((res) => res.json())
+  .then((data) =>
+    data.forEach((item) => {
+      let createCardElement = document.createElement("div");
+      createCardElement.setAttribute("class", "card");
+      createCardElement.innerHTML = `
+      <h1>${item.title}</h1>
+      <img src=${item.image} alt=${item.title}/>
+      <p>${item.description}</p>
+      `;
+      createCardElement.style.backgroundColor = "purple";
+      createCardElement.style.padding = "10px";
+      createCardElement.style.margin = "10px";
+      document.getElementById("productCard").append(createCardElement);
+    })
+  );

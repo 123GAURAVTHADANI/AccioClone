@@ -1,73 +1,41 @@
-let tableElement = document.getElementById("table");
-let tbody = document.createElement("tbody");
-tableElement.setAttribute("border", "1px");
-tableElement.appendChild(tbody);
+// let person = {
+//   name: "Vishal",
+//   zebra: "Zebra",
+//   age: 20,
+//   address: {
+//     address1: "Bangalore",
+//     type: {
+//       details: "Floor 3",
+//     },
+//   },
+// };
+// let person2 = {
+//   name: "Vishal",
+//   age: 20,
+// };
 
-let thead = document.createElement("thead");
-tableElement.appendChild(thead);
-thead.innerHTML = "<tr><th>Title</th><th>Price</th><th>Description</th></tr>";
+// // console.log(JSON.stringify(person) == JSON.stringify(person2));
 
-fetch("https://fakestoreapi.com/products")
-  .then((res) => res.json())
-  .then((data) =>
-    data.forEach((item) => {
-      tbody.innerHTML += `
-      <tr>
-      <td>${item.title}</td>
-      <td>${item.price}</td>
-      <td>${item.description}</td>
-      </tr>
-      `;
-    })
-  );
-// const colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00"];
+// // let newPerson = { ...person };
 
-// let element = document.getElementsByClassName("container");
-// console.dir(element[0].children);
-// element.forEach((item, index) => {
-//   item.style.backgroundColor = colors[index % colors.length];
-//   item.style.color = "white";
-// });
-// console.log(element);
+// // let deepPerson = JSON.parse(JSON.stringify(person));
+// // // newPerson.address.address1 = "India";
+// // deepPerson.address.address1 = "Bangladesh";
 
-// let paraElement = document.createElement("p");
-// let spanElement = document.createElement("span");
-// let btnElement = document.createElement("button");
-// let container = document.getElementById("container");
-// let inputField = document.createElement("input");
-// container.appendChild(inputField);
-// container.setAttribute("id", "container");
+// // console.log(person);
 
-// paraElement.innerHTML = "<b>Lorem Ipsum</b>";
-// btnElement.innerText = "Click Me";
-// spanElement.innerText = "I am span";
+// let stringifiedObj = JSON.stringify(person);
+// // console.log(stringifiedObj);
 
-// container.appendChild(paraElement);
-// container.appendChild(btnElement);
-// container.appendChild(spanElement);
+// console.log(person);
+// // MAPs Js
+// // comparing the obj
+// // deep copy or clone the object
 
-// spanElement.style.padding = "10px";
-// spanElement.style.backgroundColor = "purple";
-// // inputField.focus();
+let name = "stakshi";
+let name1 = "ihskats";
 
-// btnElement.addEventListener("click", () => {
-//   // container.removeChild(paraElement);
-//   // container.removeChild(spanElement);
-//   // container.classList.toggle("bgcolor");
-//   container.classList.add("bgcolors");
-// });
+let obj1 = { name: "Gaurav", age: 20 };
+let obj2 = { age: 20, name: "Gaurav" };
 
-// let tableElement = document.getElementById("table");
-// let tbody = document.createElement("tbody");
-// tableElement.appendChild(tbody);
-// const tr = document.createElement("tr");
-// const td1 = document.createElement("td");
-// tr.appendChild(td1);
-// tbody.appendChild(tr);
-// td1.innerText = "Hello";
-
-// tbody.innerHTML = `<tr>
-// <td>Gaurav</td>
-// <td>28</td>
-// <td>FSD</td>
-// </tr>`;
+console.log(JSON.stringify(obj1) == JSON.stringify(obj2));

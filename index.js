@@ -1,41 +1,52 @@
-// let person = {
-//   name: "Vishal",
-//   zebra: "Zebra",
+// localStorage.setItem("timestamp", new Date().getTime());
+// localStorage.setItem("user", "gaurav123");
+
+// console.log(localStorage.getItem("theme"));
+// setTimeout(() => {
+//   localStorage.clear();
+// }, 5000);
+// localStorage , store the data in key , value
+
+// sessionStorage.setItem("user", "accio");
+// sessionStorage.setItem("theme", "dark");
+
+// // console.log(sessionStorage.getItem("user"));
+
+// setTimeout(() => {
+//   sessionStorage.removeItem("user");
+// }, 5000);
+
+// let object1 = {
+//   name: "Gaurav",
 //   age: 20,
-//   address: {
-//     address1: "Bangalore",
-//     type: {
-//       details: "Floor 3",
-//     },
-//   },
-// };
-// let person2 = {
-//   name: "Vishal",
-//   age: 20,
 // };
 
-// // console.log(JSON.stringify(person) == JSON.stringify(person2));
+// localStorage.setItem("user", JSON.stringify(object1));
 
-// // let newPerson = { ...person };
+// document.cookie = "username:gaurav;expiresIn:30 Novemeber 2024 ";
 
-// // let deepPerson = JSON.parse(JSON.stringify(person));
-// // // newPerson.address.address1 = "India";
-// // deepPerson.address.address1 = "Bangladesh";
+// document.getElementById("container4").addEventListener("click", () => {
+//   console.log("Container 4 is clicked!!!");
+// });
+// document.getElementById("container3").addEventListener("click", () => {
+//   console.log("Container 3 is clicked!!!");
+// });
 
-// // console.log(person);
+// document.getElementById("container2").addEventListener("click", () => {
+//   console.log("Container 2 is clicked!!!");
+// });
 
-// let stringifiedObj = JSON.stringify(person);
-// // console.log(stringifiedObj);
+// document.getElementById("button").addEventListener("click", () => {
+//   console.log("Button is clicked!!!");
+// });
 
-// console.log(person);
-// // MAPs Js
-// // comparing the obj
-// // deep copy or clone the object
+// document.getElementById("parent").addEventListener("click", (event) => {
+//   if (event.target && event.target.matches("button#btn")) {
+//     console.log("Btn is clicked!!", event.target.textContent);
+//   } else if (event.target && event.target.matches("div")) {
+//     console.log("Div is clicked!!");
+//   }
+// });
+// {data.map}
 
-let name = "stakshi";
-let name1 = "ihskats";
-
-let obj1 = { name: "Gaurav", age: 20 };
-let obj2 = { age: 20, name: "Gaurav" };
-
-console.log(JSON.stringify(obj1) == JSON.stringify(obj2));
+// console.log(true && 2);

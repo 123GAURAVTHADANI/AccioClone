@@ -1,15 +1,16 @@
-body {
-  color: black;
+#parent {
+  background-color: purple;
+  color: white;
+  height: 100px;
 }
-.card > img {
-  width: 100%;
-  height: 250px;
+#container3 {
+  background-color: orange;
+  color: white;
+  height: 100px;
 }
-#productCard {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.bgcolor {
+
+#container2 {
   background-color: black;
   color: white;
+  height: 100px;
 }

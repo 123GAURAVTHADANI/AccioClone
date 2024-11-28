@@ -1,0 +1,3 @@
+1 Try to add the object prototype and see what are __proto__opeartor is
+2 Learn about HOF and practice Polyphils and Prototypes in Depth
+3 Create filter and map polyphils

@@ -1,49 +1,42 @@
 // let obj = {
-//   name: "Gaurav",
-//   age: 28,
+//   name: "Hitesh",
+//   age: 20,
+//   password: "123",
+//   details: {
+//     address1: "Tower 5",
+//   },
 // };
 // let obj2 = {
-//   name: "Stakshi",
-//   age: 20,
+//   salary: {
+//     totalCTC: 34000,
+//   },
 // };
+// let isPresent = obj2.hasOwnProperty("salary");
+// console.log(isPresent);
 
-// let employees = [
-//   { name: "Gaurav", age: 28 },
-//   { name: "Stakshi", age: 20 },
-//   { name: "Vishal", age: 20 },
-//   { name: "Raju", age: 20 },
-//   { name: "Afreen", age: 20 },
-// ];
+// // Object.assign(obj, obj2);
+// // console.log(obj);
 
-// function sayHi(greet, greet2, type) {
-//   //   console.log(`Hi ${this.name} ${greet} ${greet2}`);
-//   switch (type) {
-//     case "first": {
-//       return `Hi ${this.name} ${greet} ${greet2}`;
-//       break;
-//     }
-//     case "second": {
-//       return `Hi ${this.name} ${greet} ${greet2}`;
-//       break;
-//     }
-//   }
-// }
-
-// // fnc.call(obj)
-// // console.log(sayHi.call(obj2));
-
-// // console.log(sayHi.call(employees[1]));
-
-// // sayHi(employees[0]);
-
-// // employees.forEach((item, index) => {
-// //   if (index <= 2) {
-// //     console.log(sayHi.apply(item, ["good morning", "say goo bye!", "first"]));
-// //   } else {
-// //     console.log(
-// //       sayHi.apply(item, ["good afternoon", "say good bye!", "second"])
-// //     );
-// //   }
+// // Object.defineProperties(obj, {
+// //   name: {
+// //     writable: false,
+// //     configurable: false,
+// //   },
+// //   age: {
+// //     writable: false,
+// //   },
 // // });
+// // delete obj.name;
 
+// // obj.age = 80;
+// // obj.name = "Afreen";
 
+// // Object.freeze(obj);
+// // delete obj.name;
+// // console.log(obj);
+// // returns an array of values
+// // console.log(Object.values(obj));
+
+// // console.log(Object.keys(obj));
+// //
+// // console.log(Object.entries(obj));
